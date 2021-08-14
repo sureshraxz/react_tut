@@ -26,3 +26,8 @@ Err3:
 $ git push -u origin main
 error: src refspec main does not match any
 error: failed to push some refs to 'https://github.com/sureshraxz/react_tut.git'
+
+Solution:
+Error: git init -> git remote add ... -> git push -u origin master --> error: failed to push some refs to 'https://github.com/sureshraxz/react_tut.git'
+Working:  git init -> git remote add ... --> git add --> git commit -m 'initial commit mandatory' --> git push -u origin master --> 😁
+# commitment mukiyam bigulu
