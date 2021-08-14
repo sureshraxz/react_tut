@@ -1,0 +1,6 @@
+step 1: component classification based on requirement
+-----------------------------------------------------
+1. searh-bar.js
+2. video-detail.js
+3. video-list.js
+4. video-list-item.js
