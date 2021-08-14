@@ -1,0 +1,3 @@
+1. node 
+2. plugin -  npm install -g create-react-app (jsx)
+3. react application can be written in - jsx, tsx, js 
