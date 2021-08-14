@@ -4,3 +4,14 @@ step 1: component classification based on requirement
 2. video-detail.js
 3. video-list.js
 4. video-list-item.js
+
+*note: only one component / file is better practise
+
+step 2: Signing up for youtube api
+---------------------------------
+1. Navigate to console.developers.google.com
+2. search for Api manager -> youtube data api v3
+3. enable it 
+4. menu -> credentials -> create credentials -> cpy the api key 
+5. use that key in code 
+6. Install dependency -> npm install --save youtube-api-search
