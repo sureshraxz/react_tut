@@ -1,0 +1,90 @@
+step 1 - creating a basic component using react
+------
+1. create a component - using jsx 
+2. render the component into DOM
+
+links:
+-----
+jsx -> js  -->  https://babeljs.io/
+
+Errors:
+-------
+E 1:
+bundle.js:80 Uncaught TypeError: _react2.default.render is not a function
+    at Object.<anonymous> (bundle.js:80)
+    at __webpack_require__ (bundle.js:20)
+    at Object.<anonymous> (bundle.js:47)
+    at __webpack_require__ (bundle.js:20)
+    at bundle.js:40
+    at bundle.js:43
+
+cause:
+React.render()
+
+Fix:
+Use ReactDOM for rendering content to DOM
+
+-------------------------------------------------------
+E 2:
+bundle.js:457 Uncaught Invariant Violation: Target container is not a DOM element.
+    at invariant (http://localhost:8080/bundle.js:457:16)
+    at legacyRenderSubtreeIntoContainer (http://localhost:8080/bundle.js:19117:35)
+    at Object.render (http://localhost:8080/bundle.js:19196:13)
+    at Object.<anonymous> (http://localhost:8080/bundle.js:81:21)
+    at __webpack_require__ (http://localhost:8080/bundle.js:20:30)
+    at Object.<anonymous> (http://localhost:8080/bundle.js:47:19)
+    at __webpack_require__ (http://localhost:8080/bundle.js:20:30)
+    at http://localhost:8080/bundle.js:40:18
+    at http://localhost:8080/bundle.js:43:10
+
+cause:
+ReactDOM.render(App);
+
+Fix:
+Missing target component(DOM node) as target to rendering
+ReactDOM.render(App,document.querySelector('.index-container'));
+
+-------------------------------------------------------
+E 3:
+Warning: Functions are not valid as a React child. This may happen if you return a Component instead of <Component /> from render. Or maybe you meant to call this function rather than return it.
+
+cause:
+ReactDOM.render(App,document.querySelector('.index-container'));
+
+Fix:
+We are directly using Component(App) instead of Component Instance(<App></App> or <App/>)
+Syntax => ReactDOM.render(classInstance,targetElememt)
+ReactDOM.render(<App/>,document.querySelector('.index-container'));
+
+-------------------------------------------------------
+E 
+cause:
+Fix:
+-------------------------------------------------------
+E 
+cause:
+Fix:
+-------------------------------------------------------
+E 
+cause:
+Fix:
+-------------------------------------------------------
+E 
+cause:
+Fix:
+-------------------------------------------------------
+E 
+cause:
+Fix:
+-------------------------------------------------------
+E 
+cause:
+Fix:
+-------------------------------------------------------
+E 
+cause:
+Fix:
+-------------------------------------------------------
+E 
+cause:
+Fix:
