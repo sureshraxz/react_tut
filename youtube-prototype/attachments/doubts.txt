@@ -1,0 +1,8 @@
+when to use require and import
+
+const react = require('react);
+vs
+import react from 'react'
+
+2. https://stackoverflow.com/questions/55810240/reactjs-app-crashes-with-error-consider-adding-error-boundaries-to-your-tree
+3. Pass the api key. how to handle undefined error in react

@@ -1,0 +1,32 @@
+
+Err 1:
+Uncaught Error: Youtube Search expected key, received undefined
+    at module.exports (bundle.js:19579)
+    at App.videoApiCall (bundle.js:113)
+    at new App (bundle.js:95)
+    at constructClassInstance (bundle.js:9495)
+    at updateClassComponent (bundle.js:11030)
+    at beginWork (bundle.js:11676)
+    at performUnitOfWork (bundle.js:14508)
+    at workLoop (bundle.js:14537)
+    at HTMLUnknownElement.callCallback (bundle.js:2794)
+    at Object.invokeGuardedCallbackDev (bundle.js:2832)
+
+cause:
+const API_KEY = '';
+
+Fix: 
+Pass the api key. how to handle undefined error in react
+-----------------------------------------------
+Err 2:
+bundle.js:12337 The above error occurred in the <App> component:
+    in App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://fb.me/react-error-boundaries to learn more about error boundaries.
+
+cause:
+
+Fix:
+related to state - Workaround needed
+https://stackoverflow.com/questions/55810240/reactjs-app-crashes-with-error-consider-adding-error-boundaries-to-your-tree

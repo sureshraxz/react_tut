@@ -1,0 +1,58 @@
+step 1: component classification based on requirement
+-----------------------------------------------------
+1. searh-bar.js
+2. video-detail.js
+3. video-list.js
+4. video-list-item.js
+
+*note: only one component / file is better practise
+
+step 2: Signing up for youtube api
+---------------------------------
+1. Navigate to console.developers.google.com
+2. search for Api manager -> youtube data api v3
+3. enable it 
+4. menu -> credentials -> create credentials -> cpy the api key 
+5. use that key in code 
+6. Install dependency -> npm install --save youtube-api-search
+
+
+step 3: search bar functionality
+---------------------------------
+1. User enters input 
+    - we need an input field in search-bar component
+    - we need to track down the entered data - for which we are going to use 'controlled class component'    
+2. pass that input to the youtube-search-api
+    - As we have youtube-search-api in index.js - we need to export search-bar.js and import it into index.js
+3. display the output 
+    - As we've dynamic input from search-bar component - we need to use 'controlled class component' for index.js
+
+*note:
+-----
+component
+functional component
+class component
+controlled class component
+event handlers/ handling user events
+state
+setState
+props
+
+
+/*component in jsx - for view
+    <div></div>
+*/
+
+/*functional component - it's just a call back when called it returns back the jsx(html) 
+const App = () =>{ return <div> Functional component </div> } 
+or
+const App = () =>{ return <input onChange={event => console.log(event.target.value)} /> } 
+*/
+
+/*class component - 
+
+use react component functionality
+
+*/
+
+/*controlled class component / controlled form element*/
