@@ -56,3 +56,16 @@ use react component functionality
 */
 
 /*controlled class component / controlled form element*/
+
+step 4: youtube clone completion
+-------------------------------- 
+1. on page load the video at the index 0 will be displayed
+2. on video selection - respective video will be displayed
+    user clicks on list item - video-list-item.js - video data is passed to video-list
+    from video-list-js - data passed to parent - index.js
+
+y directly form video-list-item --> index,js is not possible
+
+video-list-item --  functional component - no need to pass data / on click event will be triggered
+video-list --  functional component - renders data no 
+video-detail -- functional component - as its only going to render the data 
